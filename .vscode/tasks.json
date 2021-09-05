@@ -1,0 +1,26 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "Win64 Build",
+            "command": "${workspaceFolder}\\.vscode\\build.bat", //calling build.bat instead
+            /*"args": [
+                "/Zi",
+                "/EHsc",
+                "/Fe:",
+                "${workspaceFolder}\\MyProgram.exe",
+                "${workspaceFolder}\\src\\*.cpp"
+            ],*/
+            "problemMatcher": [
+                "$msCompile"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
