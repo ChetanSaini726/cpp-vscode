@@ -4,10 +4,20 @@
 
 int main()
 {
-    int c = add(3,10);
+    int a,b,c;
+    std::cout << "Adding 2 numbers";
+    
+    std::cout << "\nEnter First Number: ";  
+    std::cin >> a;
+    
+    std::cout << "\nEnter Second Number: ";  
+    std::cin >> b;
 
-    std::cout << "Sum of 3 and 8: " << c;
+    c = add(a,b);
 
+    std::cout << "\nSum of 2 numbers: " << c;
+
+    std::cin.ignore();
     std::cin.get();
     
     return 0;
