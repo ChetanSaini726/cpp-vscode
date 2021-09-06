@@ -5,17 +5,17 @@
 int main()
 {
     int a,b,c;
-    std::cout << "Adding 2 numbers";
+    std::cout << "Adding 2 numbers" << std::endl;
     
-    std::cout << "\nEnter First Number: ";  
+    std::cout << "Enter First Number: ";  
     std::cin >> a;
     
-    std::cout << "\nEnter Second Number: ";  
+    std::cout << "Enter Second Number: ";  
     std::cin >> b;
 
     c = add(a,b);
 
-    std::cout << "\nSum of 2 numbers: " << c;
+    std::cout << "Output: " << c << std::endl;
 
     std::cin.ignore();
     std::cin.get();

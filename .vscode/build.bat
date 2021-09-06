@@ -11,5 +11,5 @@ cl /MP7 /I ..\include /Zi ..\source\*.cpp /EHsc  /link /out:MyProgram.exe
 
 popd
 
-move bin-int\MyProgram.exe bin\MyProgram.exe
+copy bin-int\MyProgram.exe bin\MyProgram.exe
 REM:if EXIST vc140.pdb move vc140.pdb bin-int\vc140.pdb
