@@ -3,13 +3,13 @@ echo Building...
 
 @echo off
 IF NOT EXIST bin mkdir bin
-IF NOT EXIST bin-int mkdir bin-int
+IF NOT EXIST bin_int mkdir bin_int
 
-pushd bin-int
+pushd bin_int
 
 cl /MP7 /I ..\include /Zi ..\source\*.cpp /EHsc  /link /out:MyProgram.exe
 
 popd
 
-copy bin-int\MyProgram.exe bin\MyProgram.exe
+copy bin_int\MyProgram.exe bin\MyProgram.exe
 REM:if EXIST vc140.pdb move vc140.pdb bin-int\vc140.pdb
